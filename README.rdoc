@@ -1,6 +1,22 @@
 = FeedFinder
 
-Description goes here.
+FeedFinder easily find the RSS/Atom feeds for a given link, name or topic. This gem *don't make* any HTML parse: this is slow, ugly and limited. 
+
+Instead of parsing HTML pages in search for a not common RSS/Atom links, we use another fastest and beautiful way. We use Feedly internally - it's the largest news aggregator in the world, which means that we have a really large database. 
+
+== How to Use
+
+Currently FeedFinder just have one method: `find(url)`.
+
+```ruby
+# Don't forget to require FeedFinder
+require 'FeedFinder'
+
+FeedFinder.find("www.foo.com")
+# => returns ["http://www.foo.com/news/rss.xml", "http://www.foo.com/sports/rss.xml", "http://www.foo.com/tech/rss.xml", ...]
+```
+
+In a near future I'll implement a method called "find_hard", that will try using a lot of ways. 
 
 == Contributing to FeedFinder
  

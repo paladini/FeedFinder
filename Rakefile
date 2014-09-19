@@ -17,8 +17,8 @@ Jeweler::Tasks.new do |gem|
   gem.name = "FeedFinder"
   gem.homepage = "http://github.com/paladini/FeedFinder"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = %Q{Find RSS/Atom feeds for almost all websites in the Internet.}
+  gem.description = %Q{Easily find the RSS/Atom feeds for a given link, name or topic. Internally uses Feedly.}
   gem.email = "fnpaladini@gmail.com"
   gem.authors = ["Fernando Paladini"]
   # dependencies defined in Gemfile
