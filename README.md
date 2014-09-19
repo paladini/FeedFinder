@@ -1,6 +1,6 @@
 ### FeedFinder ###
 
-FeedFinder easily find RSS/Atom feeds for a given link, name or topic. This gem **don't make** any HTML parse: this is slow, ugly and limited. We use another fastest and beautiful way: Feedly. This service is the largest news aggregator in the world, which means that we have a really large database. 
+FeedFinder is a gem that easily find RSS/Atom feeds for a given link, name or topic. This gem **don't make** any HTML parse: this is slow, ugly and limited. We use a faster and beautiful way: Feedly API. Feedly is the largest news aggregator in the world and we search their feeds database, which means that we have a really large database. 
 
 ## How to Use ##
 
@@ -14,17 +14,12 @@ FeedFinder.find("www.foo.com")
 # => ["http://www.foo.com/news/rss.xml", "http://www.foo.com/sports/rss.xml", "http://www.foo.com/tech/rss.xml", ...]
 ```
 
-In a near future I'll implement a method called "find_hard", that will try using a lot of ways. 
+In a near future I'll implement a method called `find_hard(url)`, that will try find as many feeds as possible for the given URL.
 
 ### Contributing to FeedFinder ###
  
-* Check out the latest master to make sure the feature hasn't been implemented or the bug hasn't been fixed yet.
-* Check out the issue tracker to make sure someone already hasn't requested it and/or contributed it.
-* Fork the project.
-* Start a feature/bugfix branch.
-* Commit and push until you are happy with your contribution.
-* Make sure to add tests for it. This is important so I don't break it in a future version unintentionally.
-* Please try not to mess with the Rakefile, version, or history. If you want to have your own version, or is otherwise necessary, that is fine, but please isolate to its own commit so I can cherry-pick around it.
+* Feel free to make some push request, fork, star or do whatever you want to. 
+* Suggestions and critics are welcome, please let us know your needs.
 
 ### Copyright ###
 
